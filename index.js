@@ -9,14 +9,15 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", function (req, res) {
     const pokemon = [];
-    const listpokemon = pokemon.push({Nome: 'teste', Imagem: 'teste', Tipo: 'teste'});
     res.render("index.ejs", { pokemon: pokemon });
 });
 
 app.get("/cadastro", function (req, res) {
     res.render("../views/cadastro.ejs");
 });
-
+app.get("/hoje", function (req, res) {
+    res.render("../views/hoje.ejs");
+});
 app.get("/detalhes", function (req, res) {
     const details = ['Imagem', 'Descrição', 'Altura', 'Peso', 'Categoria', 'Habilidade'];
     res.render("../views/detalhes.ejs", { details: details });

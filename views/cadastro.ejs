@@ -11,9 +11,12 @@
     <title>Cadastro</title>
 </head>
 <body>
+    <section class="container column-nowrap">
     <h1>Cadastrar Pokemons</h1>
+    <section class="container column-nowrap">
     <form method="POST" action="/formulario">
-        <div>
+        <section class="container column-nowrap">
+            
             <label for="nome">Nome: </label>
             <input type="text" name="nome" placeholder="Nome">
         </div>
@@ -31,7 +34,9 @@
         <button type="submit">Salvar</button>
 
         <input type="button" value="Voltar" onClick="history.go(-1)"> 
+       
         <input type="button" value="Atualizar" onClick="history.go(0)"> 
-
+        
+    </section>
 </body>
 </html>
