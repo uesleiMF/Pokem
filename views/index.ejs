@@ -8,7 +8,7 @@
         <title>Detalhes</title>
     </head>
     <body>
-        
+        <input type="button" value="Voltar" onClick="history.go(-1)"> 
         <article id="p">
             <section class="container stretch">
                 
@@ -24,7 +24,7 @@
                 <a id="home" href="/">Home</a>
             </section>
         
-            <% if(message != ""){ %>
+            <% if(aviso != ""){ %>
             <section id="message">
                 <p class="sucesso">Pokemon cadastrado com sucesso!</p>      <span id="close">&times;</span>
             </section>
@@ -33,7 +33,7 @@
             <div class="container flex-start">
                 <div class="item1">
             <div id="poke">
-                <% listaprincipal.forEach(item => { %>
+                <% lista.forEach(item => { %>
                    </div> 
                 <img class="imagee" src="<%= item.imagem %>" width="250" height="250" alt="imagem1" >
             

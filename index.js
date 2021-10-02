@@ -3,20 +3,20 @@ const app = express();
 const porta = process.env.PORT || 3000;
 const path = require("path");
 
-let listaprincipal = [];
+let lista = [];
 app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(express.urlencoded());
 
-let message = "";
+let aviso = "";
 
 app.get("/", (req, res) => {
 
     res.render("index", {
-        message,
-        listaprincipal,
+        aviso,
+        lista,
     });
 
 });
@@ -25,10 +25,7 @@ app.post("/", function (req, res) {
 
 })
 
-app.get("/home", function (req, res) {
-    
-    res.render("home", { det: "INDECE POKEMONS" });
-});
+
 
 app.get("/detalhes", function (req, res) {
     
@@ -66,16 +63,16 @@ app.post("/recebPokemon" , function (req, res) {
         fraquezas: fraquezas
     }
 
-    listaprincipal.push(pokemon)
+    lista.push(pokemon)
 
     
 
-    message = `Pokemon cadastrado com sucesso.`;
+    aviso = `Pokemon cadastrado com sucesso.`;
 
     
 
     setTimeout(() => {
-        message = ""
+        aviso = ""
     }, 2000);
 
     res.redirect("/");
