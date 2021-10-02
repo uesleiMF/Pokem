@@ -18,12 +18,12 @@
  }
  /* Flex Item */
  .item {
-   margin: 30px;
+   
    background: tomato;
    text-align: center;
-   font-size: 15px;
-   position: relative;
-   
+   font-size: 20px;
+   max-width: 500px;
+   margin: 0 auto;
     
    
      
@@ -59,9 +59,10 @@
      background-size: 20%;
   background-attachment: fixed;
   padding: 10px 10px;
-     color:blue;
-     text-align: justify;
-     font-size: 10px;
+     color: yellow;
+     text-align: center;
+     font-size: 22px;
+     
      
      
  }
@@ -80,13 +81,16 @@
  }
   
   section{
-    background-size: 20%;
+    background-size: 5%;
  background-attachment: fixed;
- padding: 10px 10px;
+ padding: 10px ;
     color:blue;
-    text-align: justify;
-    font-size: 10px;
-       
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    width:"20" ;
+     height:"10";
+     
     }
     div{
       width:"30" ;
@@ -99,7 +103,7 @@
       background-attachment: fixed;
       padding: 5px 10px;
       color: black;
-      border-radius: 20PX;
+      border-radius: 20px;
     }
     .imagens li img {
       width: 50px;
@@ -127,6 +131,14 @@
  background-attachment: fixed;
  padding: 10px 10px;
     color:blue;
+    text-align: justify;
+    font-size: 10px;
+  }
+  article{
+    background-size: 20%;
+ background-attachment: fixed;
+ padding: 10px 10px;
+    color:aliceblue;
     text-align: justify;
     font-size: 10px;
   }
