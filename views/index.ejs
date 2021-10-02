@@ -4,23 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/stylo.css">
+        <link rel="stylesheet" href="/css/stilo.css">
         <title>Detalhes</title>
     </head>
     <body>
         
-        <article id="tudoo">
+        <article id="p">
             <section class="container stretch">
                 
                 <h1> 
-                    <a id="titulo" href="/"></a>Pokedéx</a>
+                    <a id="titulo" href="/"></a>POKEDEX A EVOLUÇÃO</a>
                 </h1>
                 
             
             
             </section>
             <section class="botao">
-                <a id="detail" href="/cadastro">Cadastro</a>
+                <p><a id="detail" href="/cadastro">Cadastro</a></p>
                 <a id="home" href="/">Home</a>
             </section>
         
@@ -30,7 +30,8 @@
             </section>
             <% } %>
         
-
+            <div class="container flex-start">
+                <div class="item1">
             <div id="poke">
                 <% listaprincipal.forEach(item => { %>
                    </div> 
@@ -58,9 +59,14 @@
                
                 <p class="fraq">Fraquezas: <%= item.fraquezas %> <br> </p>
 
-
-                <a class="tip" href="/detalhes">Viste a Pagina Para ver mais Pokemons</a>
+                <div class="container flex-start">
+                    <div class="item1">
+                            
+                    </div>
+                <a class="tip" href="/detalhes"><p>Viste a Pagina Para ver mais Pokemons</p></a>
                 <% }) %> 
+           
+           
             </div>
         </article>
     </div>
