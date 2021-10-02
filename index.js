@@ -73,7 +73,7 @@ app.post("/recebPokemon" , function (req, res) {
 
     setTimeout(() => {
         aviso = ""
-    }, 2000);
+    }, 5000);
 
     res.redirect("/");
 })
