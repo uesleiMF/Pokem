@@ -30,11 +30,11 @@
   
   h1 {
     text-align: center;
-    margin: 20px 0 0 0;
-    font-size: 1.25em;
+    margin: 20px ;
+    font-size: 23;
     font-weight: normal;
       background-image: url("ceu.webp");
-       background-size: 50%;
+       background-size: 100%;
        background-attachment: fixed;
        padding: 10px 10px;
           color: black;
@@ -43,11 +43,23 @@
   }
   h2 {
     text-align: center;
-    margin: 20px 0 0 0;
-    font-size: 1.25em;
+    margin: 20px ;
+    font-size: 23;
     font-weight: normal;
-    margin: 20px 0 0 0;
-     background-size: 50%;
+    
+       background-size: 100%;
+       background-attachment: fixed;
+       padding: 10px 10px;
+          color: black;
+  
+  }
+  .titulo {
+    text-align: center;
+    margin: 20px ;
+    font-size: 30;
+    font-weight: normal;
+    
+       background-size: 100%;
        background-attachment: fixed;
        padding: 10px 10px;
           color: black;
@@ -58,7 +70,7 @@
   p {
       background-size: 100%;
    background-attachment: fixed;
-   padding: 20px 20px;
+   padding: 20px ;
       color:blue;
       text-align: justify;
       
@@ -67,29 +79,14 @@
   
   
   
-  body{
-      background-color: yellow;
-   background-size: 135%;
-   background-attachment: fixed;
-   filter: invert(-150%);
-  
    
-   }
-    audio {
-      height:30px; 
-      width:200px; 
-      margin: -20px -350px; 
-      position:relative;
-      top:50%; 
-      left:50%;
-  }
    
-   article{
-      width:"30" ;
-      height:"200";
-      background-size: 75%;
+   .article{
+      width:"300" ;
+      height:"20";
+      background-size: 7%;
       display: flex;
-       margin: -20px -350px; 
+      
         position:relative;
         top:10%; 
         left:10%;
@@ -97,4 +94,82 @@
         padding: 15px 30px;
         margin: 5px;
         
+         text-align: center;
+         margin: 10px;
+         font-size: 20px;
+         font-weight: normal;
+        
+         background-attachment: fixed;
+         padding: 5px 10px;
+         color: black;
+         border-radius: 20PX;
+        
      }
+     .container {
+     
+      margin: 0 auto;
+      display: flex;
+      border: 5px solid #ccc;
+    }
+     body{
+
+      background-image: url("/img/ceu.png");   
+      background-size: 100%;
+      background-attachment: fixed;
+      filter: invert(-150%);
+     
+      
+      
+     }
+      
+      .section{
+        background-size: 20%;
+     background-attachment: fixed;
+     padding: 10px 10px;
+        color:blue;
+        text-align: justify;
+        font-size: 10px;
+           
+        }
+        div{
+          width:"30" ;
+         height:"20";
+          text-align: center;
+          margin: 10px;
+          font-size: 20px;
+          font-weight: normal;
+          background-size: 20%;
+          background-attachment: fixed;
+          padding: 5px 10px;
+          color: black;
+          border-radius: 20PX;
+        }
+        .imagens li img {
+          width: 50px;
+      }
+      ul {
+          list-style-type: none;
+          float: left;
+      }
+      img {
+          width: 100px;
+      }
+      #trocarimg {
+          margin-left: 50px;
+      }
+      button {
+        background-size: 20%;
+     background-attachment: fixed;
+     padding: 10px 10px;
+        color:blue;
+        text-align: justify;
+        font-size: 10px;
+      }
+      input {
+        background-size: 20%;
+     background-attachment: fixed;
+     padding: 10px 10px;
+        color:blue;
+        text-align: justify;
+        font-size: 10px;
+      }

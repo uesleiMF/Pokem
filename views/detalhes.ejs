@@ -1,161 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UFT-8">
-    <meta http-equiv="X-UA-Compatible" content=" IE=edge">
-    <meta nome="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/stilo.css">
-    
+    <title>CONHEÇA ALGUNS POKEMONS</title>
+</head>
+<input type="button" value="Retorna a Pagina Anterior" onClick="history.go(-1)"> 
 
-    <title> POKEMONS LISTAS </title>
 
-       
-    </head>
+<body>
+    <h1 id="detalhes"><%= det %></h1>
+
+           <body>
+            <h1>PIKACHU</h1>
+            <div class="container stretch">
+            
+            <div class="item">
+               
+           
+      <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlM5fl425giuv86gjsleqvjA5vL4b0Rm7twQdlr1L_6LMjiJ_KMIZcYuEJRTC3hGZy6-E&usqp=CAU" />
     
-    <body>
+      <h1>DESCRIÇÃO:</h1>
+      <p> Pikachu é um pokémon de cor Amarelada.
+        Pokémon tipo elétrico são fortes contra
+        pokémon do tipo Água, Voador mas eles 
+        são fracos contra pokémon do tipo Elétrico.</p>
+    
+        <div class="container flex-start">
+          <div class="item1">
+              
+              <table border="6"= "center">
+               <tr>
+                <th>Caracteristicas</th>
+             </tr>
+             <tr>
+                 <td>Altura:  0.4m </td>
+             </tr>
+             <tr>
+                <td>Peso: 6kg</td>
+            </tr>
+            <tr>
+                <td>Categoria: eletrico</td>
+            </tr>
+            <tr>
+                <td>Habilidade:<br>
+                    velocidade -- 90<br>
+                    ataque -- 55 <br>
+                    defesa -- 40 <br>
+                    ataque especial -- 50<br>
+                    defesa especial -- 50<br>
+                </td>
+    
+            </tr>
         
-       	
-    <h1> Caracteristicas </h1>
-    <section class="container column-nowrap">
-        <div class="item"> <img src="/img/1.png" style="width:100px">
-            <p> Caso deseje ser direcionado para uma pagina mais detalhada clique no icone abaixo:
-                se nao pode continuar navegando na mesma pagina
-            </p>
-    
-          </div>
-
-
+              </table>
       
-          <h1> Caracteristicas </h1>
-          <section class="container column-nowrap">
-              <div class="item"> <img src="/img/1.png" style="width:100px">
-                  <p> Caso deseje ser direcionado para uma pagina mais detalhada clique no icone abaixo:
-                      se nao pode continuar navegando na mesma pagina
-                  </p>
-          
-                </div>
-        <div class="item">
-            <p> Se o meu povo, que se chama pelo meu nome, se humilhar, e orar, e buscar a minha face e se converter dos seus maus caminhos, então eu ouvirei dos céus, e per-doarei os seus pecados, e sararei a sua terra. II Crônicas 7:14.</p>
-                
-                       
+    
+    <button onClick="changeImage()">Evolução</button>
         
-
-
-
-    </section>
     </div>
     
-    
-   <h1>NA TABELA ABAIXO: <br><br>ENCONTRAM-SE ALGUMAS FORMAS DE <br>IDENTIFICA-LOS E <br>AJUDA-LOS:</h1>
-    <section class="container column-nowrap">
+    <h1>EEVEE</h1>
+    <div class="container flex-end">
         <div class="item">
-            
-            <table border="5"= "center">
-             <tr>
-              <th>Veja algumas maneiras de como ajudar alguém com depressão</th>
-           </tr>
-           <tr>
-               <td>Escute: </td>
-           </tr>
-           <tr>
-              <td>Doença não é personalidade:</td>
-          </tr>
-          <tr>
-              <td>Não faça pouco caso:</td>
-          </tr>
-          <tr>
-              <td>Encoraje a busca pela ajuda profissional:</td>
-          </tr>
-      
-            </table>
-
-
-
-
-        
-        
-    </section>
-</div>
-          
-
-             
-       <h1> PARA AJUDAR FAÇA SEU CADASTRO AQUI </h1>
-
-        <section class="container row-wrap">
-            <div class="item">
-        
-<form>
-Nome: <input type= "text" name= "Nome"><br><br>
-Cpf: <input type= "text" name= "Cpf" maxlength=11><br><br>
-<input type="reset" value="Limpar">
-<input type="submit" value="enviar">
-</form>
-            </div>
-</section>
-
-
-<h1>CLIQUE NA FIGURA ABAIXO: <br> <br> PARA CONHECER AS POSSIVEIS CARACTERISTICAS DE UMA PESSOA COM DEPRESSAO </h1>
-    <section class="container column-nowrap">
-        <div class="item">
-    
-
-<article>
-<img 
-
-id="Deus" 
-onclick="trocar()" 
-alt="doente"
- class="depressao" 
- src="https://static8.depositphotos.com/1526816/1071/v/600/depositphotos_10714227-stock-illustration-sad-man.jpg"> 
-</article>
-
- <footer>
-    <p><center>CLIQUE NA IMAGEM ACIMA<br><br> pessoa doente</center></p>
-</footer>
-
-<article>
-
- <img 
- id="Jesus" 
- onclick="mudar()" 
- alt="curado"
-  class="curados" 
-  src="https://freepikpsd.com/media/2019/10/pessoa-feliz-desenho-png.png"> 
- </article>
-
-
-        
-<footer>
-    <p><center>CLIQUE NA IMAGEM ACIMA<br><br> pessoa curada</center></p>
-</footer>
-</div>
-<h2>Palavra de reflexão:</h2>
-<section class="container column-nowrap">
-    <div class="item">
-
-<p>Faça a luz que ha em voçê brilhar</p>
-
-<p>Nunca permita que sua fe seja abalada temos que orar a Deus todos os dias pedindo que nos de forças para ficarmos firmes</p>
-<p>logo baixo segue um figura Ilustrativa que voçê tem o poder em suas mãos de manter a sua luz da vida (acesa) ou (apagada) voçê decide?</p>
-
-<button onclick="document.getElementById('myImage').src='2.jpeg'">Ligar</button>
-
-<img id="myImage" src="1.jpeg" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='1.jpeg'">Desligar</button>
-
-
-</section>
-</div>
-
-<h1>Para mais informações assista o video abaixo:</h1>
-    <section class="container row-wrap">
+           
        
-   
+    <img id="img" src="https://www.imagensanimadas.com/data/media/1446/pokemon-imagem-animada-0032.gif" />
     
+    <h2>DESCRIÇÃO:</h2>
+    <p> Eevee é um dos Pokémon mais populares da franquia,
+        seja pela presença em várias das gerações da série
+        ou pela variedade de tipos que o monstrinho evolui.</p>
+    
+    
+    <div class="container center">
+      <div class="item">
+          
+          <table border="6"= "center">
+           <tr>
+            <th>Caracteristicas</th>
+         </tr>
+         <tr>
+             <td>Altura:  0.4m </td>
+         </tr>
+         <tr>
+            <td>Peso: 6kg</td>
+        </tr>
+        <tr>
+            <td>Categoria: eletrico</td>
+        </tr>
+        <tr>
+            <td>Habilidade:<br>
+                velocidade -- 90<br>
+                ataque -- 55 <br>
+                defesa -- 40 <br>
+                ataque especial -- 50<br>
+                defesa especial -- 50<br>
+            </td>
+    
+        </tr>
+    
+          </table>
+    
+    
+    <button onClick="changeImg()">Evolução</button>
+    
+    </div>
+        
 
-</span>
+    <script src="/js/js.js"></script>
 
 
-<script type="text/javascript" src="js/script.js"></script>
+ </body>
+    
 </html>

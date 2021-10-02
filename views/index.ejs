@@ -1,46 +1,70 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/stilo.css">
-        
-        
-        <title>Projeto Pokemon</title>
+        <link rel="stylesheet" href="/css/stylo.css">
+        <title>Detalhes</title>
     </head>
-
     <body>
-        <nav>
-            <img src="/img/p.jpg"  alt="Pikachu">
-            <h1>POKEMONS</h1>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="cadastro">Cadastro</a>
-                </li>
-                <li>
-                    <a href="detalhes">Detalhes</a>
-                </li>
-                <li>
-                    <a href="hoje">Hoje</a>
-            </ul>
-        </nav>
-
-        <section class="main-class"> 
         
-                <ul>
-                    <% pokemon.forEach(item => { %>
-                        <li><%= item.Nome %></li>
-                        <li><%= item.Imagem %></li>
-                        <li><%= item.Tipo %></li>
-                    <% }) %>
-                </ul>
+        <article id="tudoo">
+            <section class="container stretch">
+                
+                <h1> 
+                    <a id="titulo" href="/"></a>Pokedéx</a>
+                </h1>
+                
             
-    </section> 
+            
+            </section>
+            <section class="botao">
+                <a id="detail" href="/cadastro">Cadastro</a>
+                <a id="home" href="/">Home</a>
+            </section>
+        
+            <% if(message != ""){ %>
+            <section id="message">
+                <p class="sucesso">Pokemon cadastrado com sucesso!</p>      <span id="close">&times;</span>
+            </section>
+            <% } %>
+        
+
+            <div id="poke">
+                <% listaprincipal.forEach(item => { %>
+                   </div> 
+                <img class="imagee" src="<%= item.imagem %>" width="250" height="250" alt="imagem1" >
+            
+               
+                <p class="numeroo">Número: <%= item.numero %></p> 
+            
+                <p class="nomee">Nome: <%= item.nome %> <br> </p> 
+              
+                <p class="tipoo">Tipo: <%= item.tipo %> <br> </p>
+               
+              
+                <p class="alt">Altura: <%= item.altura %> <br> </p>
+                
+                <p class="pes">Peso: <%= item.peso %> <br> </p>
+                
+                <p class="gen">Genero: <%= item.genero %> <br> </p>
+
+                <p class="cat">Categoria: <%= item.categoria %> <br> </p>
+
+                <p class="hab">Habilidades: <%= item.habilidades %> <br> </p>
+               
+                <p class="mod">Modelo: <%= item.modelo %> <br> </p> 
+               
+                <p class="fraq">Fraquezas: <%= item.fraquezas %> <br> </p>
 
 
+                <a class="tip" href="/detalhes">Viste a Pagina Para ver mais Pokemons</a>
+                <% }) %> 
+            </div>
+        </article>
+    </div>
+
+        <script src="/js/script.js"></script>
     </body>
 </html>
