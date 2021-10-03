@@ -142,3 +142,11 @@
     text-align: justify;
     font-size: 10px;
   }
+  figure {
+    width: 800px;
+    text-align: center;
+    background-size: 4100%;
+  background-attachment: fixed;
+  
+
+}
