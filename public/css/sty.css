@@ -114,7 +114,19 @@
   }
   img {
       width: 100px;
+      text-align: center;
+
+
+
   }
+  figure {
+    width: 800px;
+    text-align: center;
+    background-size: 100%;
+
+
+
+}
   #trocarimg {
       margin-left: 50px;
   }
